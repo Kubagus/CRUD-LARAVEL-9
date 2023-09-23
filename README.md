@@ -10,9 +10,18 @@ Sebelum menjalankan program, pastikan telah menginstall:
 - Clone repository/download
 - Buka git di dalam foldernya, lalu jalankan command 
 ```
- composer install
+composer install
+composer update
 ```
 - Copy file `.env.example` dan ubah namanya menjadi `.env`
 - buat database dengan nama laravel
+- generate key
+  ```
+  php artisan key:generate
+  ```
+- Lakukan migrasi
+ ```
+ php artisan migrate --seed
+```
 - jalankan php artisan serve
-- Lakukan migrasi dengan mengetikkan php artisan migrate
+
